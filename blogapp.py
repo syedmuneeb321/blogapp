@@ -1,7 +1,6 @@
 import streamlit as st 
 from openai import OpenAI
-import time 
-import random 
+
 
 client: OpenAI = OpenAI(api_key=st.secrets["OPENAI_API_KEY"])
 
@@ -17,7 +16,7 @@ for message in st.session_state.messages:
         st.markdown(message['content'])
 
 
-prompt: str = st.chat_input('Blog Name')
+prompt: str = st.chat_input('Enter a topic name')
 
 if prompt:
     
