@@ -17,7 +17,7 @@ for message in st.session_state.messages:
         st.markdown(message['content'])
 
 
-prompt: str = st.chat_input('say something')
+prompt: str = st.chat_input('Blog Name')
 
 if prompt:
     
