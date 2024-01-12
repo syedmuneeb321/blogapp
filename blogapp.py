@@ -7,7 +7,7 @@ client: OpenAI = OpenAI(api_key=st.secrets["OPENAI_API_KEY"])
 
 
 st.title('Meeshi Blog Generator App')
-st.subheader('Hello Api Meeshi')
+# st.subheader('Hello Api Meeshi')
 
 if 'messages' not in st.session_state:
     st.session_state.messages = []
